@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 const (
 	Big   = 1 << 100
@@ -16,7 +20,8 @@ func needFloat(x float64) float64 {
 }
 
 func main() {
-	
+	rand.Seed(time.Now().Unix())
+	fmt.Println("The Number is:",rand.Intn(10))
 	fmt.Println(needInt(Small))
 	fmt.Println(needFloat(Small))
 	fmt.Println(needFloat(Big))
