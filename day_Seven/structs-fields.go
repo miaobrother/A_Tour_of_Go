@@ -10,5 +10,5 @@ type JobStep struct {
 func main() {
 	j := JobStep{}
 	j.X = 15
-	fmt.Println(j.X,j.Y)
+	fmt.Println(j.X, j.Y)
 }
