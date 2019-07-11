@@ -9,6 +9,7 @@ func testSwitch() {
 		{
 			fmt.Println("The finger is Thumb")
 		}
+		fallthrough
 	case 2:
 		{
 			fmt.Println("The finger is  Index")
@@ -23,6 +24,10 @@ func testSwitch() {
 		}
 
 	}
+
+}
+
+func test1Switch()  {
 
 }
 
